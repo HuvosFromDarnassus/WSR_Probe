@@ -27,11 +27,13 @@
             <label class="main_search_label visually_hidden" for=""
                >Введите название концерта</label
             >
-            <button class="search_form_btn" type="submit">Найти</button>
+            <button class="search_form_btn" type="submit">
+               <span class="visually_hidden">Найти</span>
+            </button>
          </form>
 
          <nav class="main_nav">
-            <ul class="main_nav_list">
+            <ul class="main_nav_list list_reset">
                <li class="main_nav_list_item">
                   <a class="main_nav_list_link" href="#">Акции</a>
                </li>
@@ -54,7 +56,7 @@
       <main class="main">
          <!-- Программа баллов -->
          <section class="sales">
-            <h2 class="sales_main_title">
+            <h2 class="sales_main_title title">
                Программа баллов и скидок WhiteTickets
             </h2>
             <p class="sales_disc">Как это работает?</p>
@@ -113,9 +115,9 @@
 
          <!-- О компании -->
          <section class="about">
-            <h2 class="about_main_title">О компании</h2>
+            <h2 class="about_main_title title">О компании</h2>
 
-            <ul class="about_list">
+            <ul class="about_list list_reset">
                <li class="about_list_item">
                   <a class="about_list_link" href="#">Про WhiteTickets</a>
                </li>
@@ -130,17 +132,31 @@
 
          <!-- Найти билет -->
          <section class="tickets">
-            <h2 class="tickets_main_title">Найти билет</h2>
+            <h2 class="tickets_main_title title">Найти билет</h2>
 
             <form class="tickets_form">
-               <input class="tickets_date_from_input" type="date" />
-               <label class="tickets_date_from_label" for="">Дата от</label>
+               <input
+                  class="tickets_date_from_input"
+                  type="text"
+                  placeholder="Дата от"
+                  onfocus="(this.type='date')"
+               />
+               <label class="tickets_date_from_label visually_hidden" for=""
+                  >Дата от</label
+               >
 
-               <input class="tickets_date_until_input" type="date" />
-               <label class="tickets_date_until_label" for="">Дата до</label>
+               <input
+                  class="tickets_date_until_input"
+                  type="text"
+                  placeholder="Дата до"
+                  onfocus="(this.type='date')"
+               />
+               <label class="tickets_date_until_label visually_hidden" for=""
+                  >Дата до</label
+               >
 
                <!-- Выпадающее меню -->
-               <ul class="concert_type_list">
+               <ul class="concert_type_list list_reset">
                   <li class="concert_type_item">
                      <a class="concert_type_link" href="#">Классика</a>
                   </li>
@@ -161,16 +177,23 @@
                   </li>
                </ul>
 
-               <input class="guests_num_input" type="number" />
-               <label class="guests_num_label" for="">Количество гостей</label>
+               <input
+                  class="guests_num_input"
+                  type="text"
+                  placeholder="Кол-во гостей"
+                  onfocus="(this.type='number')"
+               />
+               <label class="guests_num_label visually_hidden" for=""
+                  >Количество гостей</label
+               >
 
-               <button class="tickets_form_btn" type="submit">Найти</button>
+               <button class="tickets_form_btn btn" type="submit">Найти</button>
             </form>
          </section>
 
          <!-- Акции -->
          <section class="stocks">
-            <h2 class="stocks_main_title">Акции</h2>
+            <h2 class="stocks_main_title title">Акции</h2>
 
             <ul class="stocks_list">
                <li class="stocks_list_item">
@@ -262,7 +285,7 @@
 
          <!-- Закрытые акции -->
          <section class="clsstocks">
-            <h2 class="clsstocks_main_title">Закрытые акции</h2>
+            <h2 class="clsstocks_main_title title">Закрытые акции</h2>
             <p class="clsstocks_disc">Подпишитесь на закрытую акцию</p>
 
             <form class="clsstocks_form">
@@ -276,7 +299,7 @@
                <label class="clsstocks_email_label" for=""
                   >Введите свой e-mail</label
                >
-               <button class="clsstocks_form_btn" type="submit">
+               <button class="clsstocks_form_btn btn" type="submit">
                   Подписаться
                </button>
             </form>

@@ -1,11 +1,11 @@
-/* CUSTOM COLORS */
+/*=== CUSTOM COLORS ===*/
 :root {
    --basic-black: #000000;
    --basic-white: #ffffff;
 }
 
-/* FONTS */
-/* Regular */
+/*=== FONTS ===*/
+/*== Regular ==*/
 @font-face {
    font-family: "PlayfairDisplay";
    font-style: normal;
@@ -14,7 +14,7 @@
       url("../fonts/PlayfairDisplay-Regular.ttf") format("woff2");
 }
 
-/* Bold */
+/*== Bold ==*/
 @font-face {
    font-family: "PlayfairDisplay";
    font-style: normal;
@@ -23,7 +23,7 @@
       url("../fonts/PlayfairDisplay-Bold.ttf") format("woff2");
 }
 
-/* Italic */
+/*== Italic ==*/
 @font-face {
    font-family: "PlayfairDisplay";
    font-style: italic;
@@ -32,7 +32,7 @@
       url("../fonts/PlayfairDisplay-Italic.ttf") format("woff2");
 }
 
-/* BoldItalic */
+/*== BoldItalic ==*/
 @font-face {
    font-family: "PlayfairDisplay";
    font-style: italic;
@@ -41,7 +41,7 @@
       url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("woff2");
 }
 
-/* GENERAL STYLES */
+/*=== GENERAL STYLES ===*/
 *,
 *::after,
 *::before {
@@ -102,5 +102,148 @@ a {
    padding: 0 10px;
 }
 
-/* STYLES */
-/* HEADER */
+.title {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.btn {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+   text-transform: uppercase;
+}
+
+/*=== STYLES ===*/
+/*== HEADER ==*/
+.main_search_input {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.main_search_input::placeholder {
+   opacity: 1;
+}
+
+.main_nav_list_link {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   color: var(--basic-white);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.main_title {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 24px;
+}
+
+/*== MAIN ==*/
+/*== sales ==*/
+.sales_disc {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.sale_title {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.sale_number {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   color: var(--basic-black);
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.sale_discription {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+/*== about ==*/
+.about_list_link {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   color: var(--basic-white);
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 24px;
+}
+
+/*== tickets ==*/
+.tickets_date_from_input,
+.tickets_date_until_input,
+.guests_num_input {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.tickets_date_from_input::placeholder,
+.tickets_date_until_input::placeholder,
+.guests_num_input::placeholder {
+   opacity: 1;
+}
+
+.concert_type_link {
+   color: var(--basic-black);
+}
+
+/*== stocks ==*/
+.stock_title {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.stock_discription {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+/*== clsstocks ==*/
+.clsstocks_disc {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.clsstocks_email_input {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.clsstocks_email_input::placeholder {
+   opacity: 1;
+}
+
+/*=== FOOTER ===*/
+.footer_tel {
+   font-family: "PlayfairDisplay", "Times New Roman", sans-serif;
+   color: var(--basic-white);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
